@@ -1,0 +1,76 @@
+
+<!DOCTYPE html>
+<html lang="en" style="height: 100%;">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+        }
+        body {
+            display: flex;
+            flex-direction: column;
+            background-color: #f8f9fa;
+            text-align: center;
+        }
+        header, footer {
+            background-color: gray; /* Adjusted for clarity */
+            color: white;
+            padding: 10px 0;
+        }
+        .content {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        h1 {
+            color: #007bff;
+            margin-bottom: 40px;
+        }
+        .button-container {
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h2>Home Page</h2>
+        </div>
+    </header>
+
+    <div class="container content">
+        <h1>Welcome to Lakshmi's Website!</h1>
+        <div class="button-container">
+            <!-- Bootstrap Button -->
+            <button class="btn btn-primary" onclick="displayAlert()">Click Me!</button>
+        </div>
+        <p id="date" class="text-center"></p>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Lakshmi Prasanna Malempati </p>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        // JavaScript to display the current date
+        document.getElementById('date').innerHTML = new Date().toDateString();
+
+        // Function to display alert
+        function displayAlert() {
+            alert('Hello!');
+        }
+    </script>
+</body>
+</html>
