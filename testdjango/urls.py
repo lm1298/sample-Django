@@ -22,6 +22,8 @@ from api import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('api.urls')),
-    path('about/', views.about, name='about'),
-    path('contact/', views.contact, name='contact'),
+    path('', views.home, name='home'),
+    path('people/', views.PersonList.as_view(), name='person-list'),
+    path('people/<int:pk>/', views.PersonDetail.as_view(), name='person-detail'),
+    
 ]

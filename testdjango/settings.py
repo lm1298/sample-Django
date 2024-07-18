@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-5wmpksb_jh-dz2qf0qehj3sj8yvp3onz49yq3hy-#tyv-n8(&8
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['ec2-xx-xxx-xxx-xxx.compute-1.amazonaws.com', 'http://127.0.0.1:8000/']
+ALLOWED_HOSTS = ['*']
 
 
 
@@ -57,7 +57,8 @@ MIDDLEWARE = [
 ROOT_URLCONF = 'testdjango.urls'
 
 CORS_ALLOWED_ORIGINS = [
-    "http://localhost:3000",
+    'https://ec2-3-21-185-173.us-east-2.compute.amazonaws.com',"http://test-react-lakshmi.s3-website.us-east-2.amazonaws.com",
+    'http://localhost:3000',
 ]
 TEMPLATES = [
     {
